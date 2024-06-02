@@ -1,0 +1,13 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter Text Adder",
+  "version": "1.0",
+  "description": "Adds a text to each tweet on Twitter",
+  "permissions": ["https://twitter.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://twitter.com/*"],
+      "js": ["contentScript.js"]
+    }
+  ]
+}
